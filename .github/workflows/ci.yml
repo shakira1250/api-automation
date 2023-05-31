@@ -21,6 +21,7 @@ jobs:
         run: mvn --batch-mode --update-snapshots package
   test:
     name: TEST API AUTOMATION
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Test API
