@@ -20,7 +20,7 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
   test:
-    name: TEST API
+    name: TEST API AUTOMATION
     runs-on: ubuntu-latest
     steps:
       - name: Test API
